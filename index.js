@@ -11,8 +11,9 @@ app.use('/', createProxyMiddleware({
     changeOrigin: true,
 }));
 
-app.use('/signup', express.static(path.join(__dirname, 'static', 'signup.html')))
-app.use('/login', express.static(path.join(__dirname, 'static', 'login.html')))
+app.use('/signup', express.static(path.join(__dirname, 'static')))
+app.use('/login', express.static(path.join(__dirname, 'static')))
+
 
 
 app.listen(3000, () => {
