@@ -1,2 +1,7 @@
-[template.environment]
-  PROXY_TARGET = "ENTER_URL_HERE"
+[build]
+  publish = "start"
+  command = "npm start"
+
+[template]
+  [template.environment]
+    PROXY_TARGET = "ENTER_URL_HERE"
